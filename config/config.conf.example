@@ -1,0 +1,13 @@
+[aws]
+aws_conn_id = aws_default
+aws_region = eu-north-1
+aws_data_bucket_name = yojanbucketweatherdata
+
+
+[glue]
+iam_role =your_role
+s3_input_target_path = s3://yojanbuckettaxidata/weather_raw_data/
+
+[openweather]
+api_key = your_key
+base_url =https://api.openweathermap.org/data/2.5/weather
